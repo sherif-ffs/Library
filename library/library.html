@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Library</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="library.css">
+    <script src="library.js"></script>
+
+  </head>
+  <body>
+    <div class="library">
+      <div class="top-row">
+        <h1>Library</h1>
+        <button id="make-book" type="button" name="button" class="btn-primary">Add Book</button>
+      </div>
+
+      <div class="row">
+        <table id="myTable">
+        <thead>
+          <tr class="titles">
+
+            <th>Title</th>
+            <th>Author</th>
+            <th>Pages</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody id="tBody">
+          <tr class="books">
+            <!--
+            <td>the shining</td>
+            <td>stanely kubrick</td>
+            <td>2</td>
+            <td><button class="isRead" id="read" value="True">Read</button> <button class="delete">Delete</button></td> -->
+          </tr>
+        </tbody>
+        </table>
+      </div>
+
+      <!-- modal -->
+      <div id="myModal" class="modal">
+
+        <div class="modal-content">
+               <div class="addDataForm">
+                   <form>
+                  <div><label for="title">Title</label><input type="text" id="title"></input></div>
+                  <div><label for="Author">Author</label><input type="text" id="author"></input></div>
+                   <div><label for="Pages">Pages</label><input type="number" placeholder="" id="pages"></input></div>
+                   <div><label for="Status">Status</label><select id="status"><option value = 'read' >Read</option><option value="Not Read">Not yet Read</option></select></div>
+                  <input type="button" id="addToLibrary" value="Add Book To Library"></input>
+                  <span id="close">+</span>
+               </form>
+               </div>
+         </div>
+         </div>
+      <!-- end modal -->
+    </div>
+  </body>
+</html>
